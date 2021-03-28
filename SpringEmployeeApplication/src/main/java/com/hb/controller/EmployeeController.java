@@ -21,6 +21,7 @@ public class EmployeeController {
 
 	@RequestMapping(value="/empform")
 	public String newEmpForm(Model model) {
+		System.out.println("newEmpForm method called");
 		model.addAttribute("employee",new Employee());
 		return "newEmpForm";
 	}
